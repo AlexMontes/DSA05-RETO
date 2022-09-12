@@ -118,3 +118,9 @@ ax1.bar(employees['Age'], employees['Attrition_rate'])
 st.pyplot(fig3)
 st.markdown('___')
 
+# Attrition Rate by Time of Service
+st.header('Attrition Rate by Time of Service')
+fig4, ax1 = plt.subplots(figsize = (15, 5))
+ax1.bar(employees['Age'], employees['Attrition_rate'])
+st.pyplot(fig4)
+st.markdown('___')
