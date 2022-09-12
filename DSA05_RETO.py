@@ -99,29 +99,35 @@ st.markdown("___")
 
 # Histogram of Unit
 st.header('Unit Histogram')
-fig, ax = plt.subplots(figsize = (15, 5))
-ax.hist(employees['Unit'])
+fig, ax1 = plt.subplots(figsize = (15, 5))
+ax1.set_xlabel('Unit')
+ax1.tick_params(axis = 'x', rotation = 45)
+ax1.hist(employees['Unit'])
 st.pyplot(fig)
 st.markdown("___")
 
 # Attrition Rate by Hometown
 st.header('Attrition Rate by Hometown')
-fig2, ax1 = plt.subplots(figsize = (15, 5))
-ax1.bar(employees['Hometown'], employees['Attrition_rate'])
+fig2, ax2 = plt.subplots(figsize = (15, 5))
+ax2.set_xlabel('Hometown')
+ax2.set_ylabel('Attrition_rate', color = 'blue')
+ax2.bar(employees['Hometown'], employees['Attrition_rate'])
 st.pyplot(fig2)
 st.markdown('___')
 
 # Attrition Rate by Age
 st.header('Attrition Rate by Age')
-fig3, ax1 = plt.subplots(figsize = (15, 5))
-ax1.bar(employees['Age'], employees['Attrition_rate'])
+fig3, ax3 = plt.subplots(figsize = (15, 5))
+ax3.set_xlabel('Age')
+ax3.set_ylabel('Attrition_rate', color = 'blue')
+ax3.bar(employees['Age'], employees['Attrition_rate'])
 st.pyplot(fig3)
 st.markdown('___')
 
 # Attrition Rate by Time of Service
 st.header('Attrition Rate by Time of Service')
 fig4, ax4 = plt.subplots(figsize = (15, 5))
-ax4.set_xlabel('Age')
+ax4.set_xlabel('Time_of_Service')
 ax4.set_ylabel('Attrition_rate', color = 'blue')
 ax4.bar(employees['Age'], employees['Attrition_rate'])
 st.pyplot(fig4)
