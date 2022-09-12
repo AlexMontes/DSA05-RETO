@@ -121,6 +121,8 @@ st.markdown('___')
 # Attrition Rate by Time of Service
 st.header('Attrition Rate by Time of Service')
 fig4, ax1 = plt.subplots(figsize = (15, 5))
+ax1.xlabel('Age', fontzise = 18, color = '#029386')
+ax1.ylabel('Attrition_rate', fontsize = 18)
 ax1.bar(employees['Age'], employees['Attrition_rate'])
 st.pyplot(fig4)
 st.markdown('___')
