@@ -10,6 +10,8 @@ import matplotlib.pyplot as plt
 URL = ('Employees.csv')
 
 st.title('DSA05 - RETO')
+st.header('Alejandro Montes Silva')
+st.markdown('____')
 
 @st.cache
 def load_data(nrows):
