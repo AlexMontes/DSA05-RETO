@@ -107,7 +107,7 @@ st.markdown("___")
 # Attrition Rate
 st.header('Attrition Rate by Hometown')
 fig2, ax1 = plt.subplots(figsize = (15, 5))
-ax1.plot(employees['Hometown'], employees['Attrition_rate'])
+ax1.bar(employees['Hometown'], employees['Attrition_rate'])
 st.pyplot(fig2)
 st.markdown('___')
 
