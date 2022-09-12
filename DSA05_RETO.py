@@ -3,7 +3,10 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Link when using Colab and GDrive
 #URL = ('/content/gdrive/MyDrive/Colab Notebooks/DSA05 - Aplicacion web en la Ciencia de Datos/Reto/Employees.csv')
+
+# Link when using stremlit with github
 URL = ('Employees.csv')
 
 st.title('DSA05 - RETO')
