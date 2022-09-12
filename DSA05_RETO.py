@@ -104,11 +104,17 @@ ax.hist(employees['Unit'])
 st.pyplot(fig)
 st.markdown("___")
 
-# Attrition Rate
+# Attrition Rate by Hometown
 st.header('Attrition Rate by Hometown')
 fig2, ax1 = plt.subplots(figsize = (15, 5))
 ax1.bar(employees['Hometown'], employees['Attrition_rate'])
 st.pyplot(fig2)
 st.markdown('___')
 
+# Attrition Rate by Age
+st.header('Attrition Rate by Age')
+fig3, ax1 = plt.subplots(figsize = (15, 5))
+ax1.bar(employees['Age'], employees['Attrition_rate'])
+st.pyplot(fig3)
+st.markdown('___')
 
